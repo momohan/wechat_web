@@ -1,0 +1,52 @@
+<view class="container">
+    <view class="detail_cont">
+        <text id="detail">信号名称：保护动作</text>
+    </view>
+<!--汽车简介内容
+    <view class="info_cont">
+        <text id="info">
+            保护动作
+        </text>
+    </view>-->
+<!--汽车图片
+    <view class="car_cont">
+        <swiper autoplay="true" duration="{{duration}}" class="car_pic">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" style="width: 100%; height: 100%"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>-->
+<!--汽车价格&车名-->
+    <view class="name_cont">
+        <text class="car_name">信号含义：分段保护动作发出断路器跳闸命令。</text>
+        <text class="car_price">所属设备：35kV及以下分段断路器</text>
+    </view>
+<!--汽车配置-->
+    <view class="car_detail">
+        <text class="car_price">信号来源 : 分段保护装置</text>
+    </view>
+    <view class="car_detail">
+        <text class="car_price">信号类别 : 事故信号</text>
+    </view>
+    <view class="car_detail">
+        <text class="car_price">关联信号 : A、过流I/II段动作，充电保护动作，保护动作告警，断路器变位；
+B、跳闸断路器电流、功率指示为零，失压母线电压指示为零，分段保护装置“跳闸”指示灯亮。</text>
+    </view>
+    <view class="car_detail">
+        <text class="car_price">产生原因 : 任一段母线发生短路故障。</text>
+    </view>
+    <view class="car_detail">
+        <text class="car_price">处理原则 : 1、检查保护装置动作信息及运行情况；
+2、检查分段断路器位置及断路器间隔设备有无异常；
+3、根据检查情况进行相应处理，具体参见过流I/II段动作、充电保护动作的各自处理原则。</text>
+    </view>
+
+    <!--<button id="btn" size="mini" type="primary" loading="{{btn_load}}" plain="{{plain}}" bindtap="setLoad">查看更多配置</button>-->
+
+    <loading hidden="{{ hidden }}">
+        加载中...
+    </loading>
+
+</view>

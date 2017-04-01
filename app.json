@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/cars/cars",
+    "pages/signls/signls",
+    "pages/car_detail/ao_di/ao_di",
+    "pages/car_detail/super_car/super_car",
+    "pages/wx_API/wx_API"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "220kV变电站信号检索系统",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#00BFFF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+      "text": "首页",
+      "pagePath": "pages/index/index",
+      "iconPath": "image/shou_ye.png",
+      "selectedIconPath": "image/shou_ye-select.png"
+      }, 
+      {
+        "text": "设备查询",
+        "pagePath": "pages/cars/cars",
+        "iconPath": "image/xuan_che.png",
+        "selectedIconPath": "image/xuan_che-select.png"
+      },
+      {
+        "text": "信号检索",
+        "pagePath": "pages/signls/signls",
+        "iconPath": "image/xuan_che.png",
+        "selectedIconPath": "image/xuan_che-select.png"
+      },
+      {
+        "text": "关于我们",
+        "pagePath": "pages/wx_API/wx_API",
+        "iconPath": "image/wx_API.png",
+        "selectedIconPath": "image/wx_API-select.png"
+      }
+    ]
+  }
+}

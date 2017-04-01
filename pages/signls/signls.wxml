@@ -1,0 +1,21 @@
+<!--logs.wxml-->
+<view class="container">
+  <input placeholder="请输入信号名称" bindinput="input" />
+  <button type="primary" bindtap="btnClick"> 查询 </button> 
+  
+</view>
+<view >
+      <loading wx:if="{{showLoading}}">正在查询...</loading>
+  </view>
+<view class="expressinfo" wx:for="{{expressInfo}}" wx:key="key">
+  
+  <ul>
+   <li>{{expressInfo[index]}}</li>
+   <li>{{item.time}}</li> 
+  </ul> 
+
+</view>
+
+  <block wx:for="{{logs}}" wx:key="key" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
